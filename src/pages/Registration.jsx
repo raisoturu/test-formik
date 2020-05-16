@@ -169,7 +169,7 @@ const Registration = () => {
                         component={FieldSelect}
                         options={provinsiOptions}
                       />
-                      {errors.provinsi && touched.provinsi && (
+                      {errors.provinsi && (
                         <div className="d-block invalid-feedback">
                           {errors.provinsi && errors.provinsi}
                         </div>
@@ -184,7 +184,7 @@ const Registration = () => {
                         component={FieldSelect}
                         options={kotaOptions}
                       />
-                      {errors.kota && touched.kota && (
+                      {errors.kota && (
                         <div className="d-block invalid-feedback">
                           {errors.kota && errors.kota}
                         </div>
