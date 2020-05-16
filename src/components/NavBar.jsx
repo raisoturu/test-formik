@@ -3,7 +3,7 @@ import { Navbar, Button } from "react-bootstrap";
 import "./NavBar.css";
 const NavBar = () => {
   return (
-    <Navbar bg="white" expand="lg" fixed="top" className="shadow-sm">
+    <Navbar bg="white" expand="lg" fixed="top" className="shadow-sm px-lg-4">
       <Navbar.Brand href="#home">
         <img
           className="h-100"

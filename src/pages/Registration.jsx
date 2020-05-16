@@ -61,7 +61,7 @@ const Registration = () => {
     <Container className="flex-grow-1 margin-nav">
       <Row className="justify-content-center mt-3 mt-md-5">
         <Col md="8">
-          <Card className="border-0 shadow">
+          <Card className="border-0 shadow rounded">
             <Card.Body>
               <div className="content-title mb-3">Registrasi</div>
               <Formik
@@ -79,7 +79,7 @@ const Registration = () => {
                 }) => (
                   <form onSubmit={handleSubmit}>
                     <Row>
-                      <Col>
+                      <Col lg="6">
                         <Form.Group>
                           <Form.Label>
                             Nama Depan
@@ -96,7 +96,7 @@ const Registration = () => {
                           </Form.Control.Feedback>
                         </Form.Group>
                       </Col>
-                      <Col>
+                      <Col lg="6">
                         <Form.Group>
                           <Form.Label>
                             Nama Belakang
@@ -218,17 +218,16 @@ const Registration = () => {
                         {errors.password && touched.password && errors.password}
                       </Form.Control.Feedback>
                     </Form.Group>
-                    <Button
-                      className="mt-3"
-                      type="submit"
-                      disabled={isSubmitting}
-                    >
-                      {isSubmitting ? (
-                        <Spinner animation="grow" size="sm" />
-                      ) : (
-                        "Submit"
-                      )}
-                    </Button>
+                    <div className="mt-4 d-flex justify-content-between align-items-center">
+                      <Button type="submit" disabled={isSubmitting}>
+                        {isSubmitting ? (
+                          <Spinner animation="grow" size="sm" />
+                        ) : (
+                          "Submit"
+                        )}
+                      </Button>
+                      <a href="#sudahpunyaakun">Sudah punya akun?</a>
+                    </div>
                     <Form.Text className="text-muted">
                       <span className="small text-danger"> *</span> Harus diisi.
                     </Form.Text>

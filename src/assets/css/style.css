@@ -26,3 +26,8 @@ body {
     font-size: 1.2em;
   }
 }
+a:hover,
+a {
+  text-decoration: none;
+  transition: all ease 0.2s;
+}
